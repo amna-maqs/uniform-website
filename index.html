@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-1 Uniforms</title>
+    <link rel="icon" href="Assets/images/logo/Icons.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Assets/Css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- modal  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">A-1 Uniforms.com</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <h1 class="h3 mb-3 fw-bolder text-center">Please sign in</h1>
+
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control text-lowercase" id="floatingInput"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="password" class="form-control text-lowercase" id="floatingPassword"
+                                    placeholder="Password" required>
+                                <label for="floatingPassword">Password</label>
+                            </div>
+
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" value="remember-me"> Remember me
+                                </label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="btn">Sign in</button>
+                            <p class="mt-5 mb-3 text-muted text-center">&copy; 2016–2022</p>
+                        </form>
+                    </main>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- header  -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo"><img src="Assets/images/logo/5.png" alt="" width="65%"></a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-togg" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    shop
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item mb-2" href="shop.html">School Shirts</a></li>
+                    <li><a class="dropdown-item mb-2" href="shop.html">School Skirts</a></li>
+                    <li><a class="dropdown-item mb-2" href="shop.html">School frocks</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item mb-2" href="shopnext.html">P.T Shirts</a></li>
+                    <li><a class="dropdown-item mb-2" href="shopnext.html">P.T Shorts</a></li>
+                    <li><a class="dropdown-item mb-2" href="shopnext.html">P.T Track pents</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item mb-2" href="shopnext1.html">Belts</a></li>
+                    <li><a class="dropdown-item mb-2" href="shopnext1.html">Tie</a></li>
+                    <li><a class="dropdown-item mb-2" href="shopnext2.html">Logos</a></li>
+                    <li><a class="dropdown-item mb-2" href="shopnext1.html">Socks</a></li>
+                </ul>
+            </li>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">contact Us </a>
+            <a href="feedback.html">Feedback </a>
+        </nav>
+
+        <div class="icons">
+            <!-- <a href="#"  class="fas fa-search" title="search" ></a> -->
+
+            <a href="#"><i class="fas fa-shopping-cart  fa-1x ml-md-0 mt-0 " id="now" style="cursor: pointer;"></i></a>
+
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a href="#" class="fas fa-user" title="User"></a>
+            </button>
+        </div>
+
+        </div>
+    </header>
+
+
+    <!-- home  -->
+    <section id="home">
+        <h4>OUTFIT OF THE DAY!</h4>
+        <h2><span>Make</span> Your Comfort</h2>
+        <h1>Is Our <span>Happiness</span></h1>
+        <p>Biggest uniforms sale & upto 50% off!</p>
+        <button><a href="shop.html">shop Now</a></button>
+    </section>
+
+
+    <!-- featured  -->
+    <section class="icons-container section-padd">
+        <div class="icons">
+            <img src="Assets/images/logo/free-delivery.png" alt="">
+            <div class="info1">
+                <h3>free-delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="Assets/images/logo/money.png" alt="">
+            <div class="info1">
+                <h3>10 Days returns</h3>
+                <span>Moneyback</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="Assets/images/logo/gift-card.png" alt="">
+            <div class="info1">
+                <h3>offers & gifts</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="Assets/images/logo/secure-payment.png" alt="">
+            <div class="info1">
+                <h3>secure payments</h3>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- main  -->
+    <main>
+        <div class="container my-5    ">
+            <div class="row p-4 pb-0  pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 col-md-12 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 mb-4">Welcome To<br> A-1 Uniforms!</h1>
+                    <p class="lead">
+
+                        "A-1 Uniforms is a leading provider of high-quality and durable uniforms for a wide range of
+                        industries and professions. With years of experience and a commitment to customer satisfaction,
+                        we strive to provide the best products and services to our clients. Our goal is to outfit
+                        professionals with comfortable and functional uniforms that inspire confidence, professionalism,
+                        and pride."</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <button type="button" class="btn btn-warning px-4" id="btn"><a href="about.html">Visit
+                                Now</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 offset-lg-1 offset-md-0 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3 " src="Assets/images/banner/b16.png" alt="" width="720">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- product  -->
+    <section id="product1" class="section-padd">
+        <h1 id="pre">Featured Products</h1>
+        <p class="pre">new Modern Uniforms Design</p>
+        <div class="pro-container">
+
+            <!-- shirts  -->
+            <div class="pro" onclick="window.location.href='singleproduct/Sproduct.html'">
+                <img src="Assets/images/shirts/f1.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$74</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/shirts/12.jpg" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$74</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/shirts/13.jpg" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$74</h4>
+                </div>
+                <a href="#" class="cart"><i class="fa fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/shirts/14.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$74</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <!-- Skirts  -->
+            <div class="pro" onclick="window.location.href='singleproduct/Sproduct1.html'">
+                <img src="Assets/images/frocks/f4.jpg" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Frocks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$54</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/frocks/f5.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Frocks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$54</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/frocks/f9.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Frocks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$54</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/frocks/f8.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School frocks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$54</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart "></i></a>
+
+            </div>
+
+            <!-- belts  -->
+            <div class="pro">
+                <img src="Assets/images/belts/17.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Belts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$18</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/ties/t14.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Tie</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$18</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/belts/7.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Belts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$18</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro" onclick="window.location.href='singleproduct/sproduct2.html'">
+                <img src="Assets/images/ties/t17.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School Tie</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$18</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart "></i></a>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- slider  -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide section-m2" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="Assets/images/banner/b20.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="Assets/images/banner/b19.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="Assets/images/banner/b21.webp" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="Assets/images/banner/b23.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="Assets/images/banner/b24.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="Assets/images/banner/b25.jpeg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="Assets/images/banner/b36.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- new product  -->
+    <section id="product1" class="section-padd">
+        <h1 id="pre">New Arrivals</h1>
+        <p class="pre">new Modern Design</p>
+        <div class="pro-container">
+
+            <!-- shirts  -->
+            <div class="pro">
+                <img src="Assets/images/New/n1.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>P.T shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$99</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart "></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/New/n2.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>P.T shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$99</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/New/n5.jpg" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>P.T track pents</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$51</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/New/n6.jpeg" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>P.T track pents</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$51</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/New/n7.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>P.T Shorts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$28</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/New/n8.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>P.T Shorts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$28</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/New/n9.webp" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School socks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$13</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+            <div class="pro">
+                <img src="Assets/images/Socks/11.png" alt="">
+                <div class="des">
+                    <span>A-1 Uniforms</span>
+                    <h5>School socks</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$13</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- banner  -->
+    <section id="sm-banner" class="section-padd">
+
+        <div class="banner-box">
+            <h4>crazy deals</h4>
+            <h2>Buy 1 get 1 free</h2>
+            <span>The best classic uniforms is on sale at A-1 Uniforms</span>
+            <button class="white"><a href="about.html">Learn More</a></button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>School Uniforms</h4>
+            <h2>Up-coming season</h2>
+            <span>The best classic uniforms is on sale at A-1 Uniforms</span>
+            <button class="white"><a href="shop.html">Collection</a></button>
+        </div>
+
+    </section>
+
+    <section id="banner3" class="section-padd">
+
+        <div class="banner-box ">
+
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h2>New collection</h2>
+            <h3>Uniforms-2023</h3>
+        </div>
+
+        <div class="banner-box banner-box3">
+            <h2>P.T-shirts</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="mt-5">
+        <div class="content">
+            <div class="top">
+
+                <div class="logo-details">
+                    <i class="fas fa-shopping-cart fa-flip-horizontal"></i>
+                    <span class="logo-name">A-1 Uniforms.Com</span>
+                </div>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/groups/237007162279645/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/A1uniform23" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/a1_uniforms23/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/abdulmajeed078699/_saved/" target="_blank"><i
+                            class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/channel/UCOTCn5K5BbDuFf_Pg9SbBiQ" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="links-box">
+                <ul class="box">
+                    <li class="link-name">Quicks Links</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About US</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+
+                <ul class="box">
+                    <li class="link-name">location</li>
+                    <li><a href="https://goo.gl/maps/SwYMYRbYyKhJ2afq7" target="_blank">Pakistan</a></li>
+                    <li><a href="https://goo.gl/maps/hFaLBT8nEg9zSAp68" target="_blank">USA</a></li>
+                    <li><a href="https://goo.gl/maps/qwJezdCfnMUQwb9i8" target="_blank">Japan</a></li>
+                    <li><a href="https://goo.gl/maps/NV8XN4QC7xRvWvCK8" target="_blank">France</a></li>
+                    <li><a href="https://goo.gl/maps/tEqTsjpbDVBiiLgJ8" target="_blank">Dubai</a></li>
+                </ul>
+
+                <ul class="box">
+                    <li class="link-name">Contact Info</li>
+                    <li><a href="tel:+92%2021%20111%20112%20111">+92 21 111 112 111</a></li>
+                    <li><a href="mailto:A-1 uniforms@gmail.com">A-1 Uniforms@gmail.com</a></li>
+                    <li><a href="https://goo.gl/maps/SwYMYRbYyKhJ2afq7" target="_blank">Karachi Pakistan-72400</a></li>
+                </ul>
+
+                <ul class="box input-box">
+                    <li class="link-name">Subscribe</li>
+                    <form action="#">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="bottom-details">
+            <div class="bottom-text">
+                <span class="copyright-text">copyright &#169; 2016-2023 <a href="#"> A-1 Uniforms</a> All Right
+                    Reversed.</span>
+                <span class="policy-items">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- cart   -->
+    <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info">
+        <div class="col-md-10 col-lg-6 col-sm-12  mr-lg-6 border p-3 pb-5 rounded-lg bg-white ml-md-0" id="cart"
+            style="position: absolute; z-index: 1; top: 80px; right: 50px; overflow: auto;">
+
+            <div class="d-flex ">
+
+                <div class="col-md-3  col-sm-6 d-flex flex-wrap justity-content-space-between ms-2">
+                    <h5 class="fw-bold">Products</h5>
+                </div>
+
+                <div class="col-md-3 col-sm-6 d-flex flex-wrap justity-content-space-between ">
+                    <h5 class="fw-bold">Tittle</h5>
+                </div>
+
+                <div class="col-md-2 col-sm-6 d-flex flex-wrap justity-content-space-between me-4">
+                    <h5 class="fw-bold">Qty</h5>
+                </div>
+
+                <div class="col-md-1  col-sm-3 d-flex flex-wrap justity-content-space-between ms-2">
+                    <h5 class="fw-bold">Price</h5>
+                </div>
+
+                <div class="col-md-1"></div>
+
+            </div>
+
+            <div id="order" style="overflow: auto; height:500px;">
+
+            </div>
+
+
+            <div id="cart_footer">
+                <div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight-bold"
+                    style="letter-spacing: 1.2px; font-size: 20px; cursor: pointer;">
+                    close
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="Assets/Js/jquery.js"></script>
+    <script src="Assets/Js/jquery1.js"></script>
+    <script src="Assets/Js/.js"></script>
+    <script src="Assets/Js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
